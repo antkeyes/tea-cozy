@@ -1,0 +1,153 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: black;
+    font-size: 22px;
+    color: seashell;
+    font-family: Helvetica;
+    /* image opacity -- not text */
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    width: 100%;
+    height: 69px;
+    display: block;
+    position: fixed;
+    top: 0px;
+    border-bottom: 1px solid seashell;
+    
+    /* display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: blue;
+    height: 69px; */
+
+}
+
+.logo {
+    height: 50px;
+    float: left;
+    margin:10px;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.navigation a {
+    height: 100%;
+    /* making the nav anchors a table is the best way */
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: underline;
+    color: white;
+    height: 100%;
+}
+
+.mission-container {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px; 
+    max-width: 1200px;
+    margin: 40px auto 40px auto;
+    display: flex;
+
+    /* background-color: green; */
+}
+
+.text-over {
+    /* if the container display is 'auto', all you need is margin: auto. You won't need to mess with padding, etc.  */
+    margin: auto;
+    background-color: black;
+    width: 100%;
+}
+
+.featured-container {
+    display: inline-flex;
+    max-width: 1000px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured img {
+    height: 200px;
+    width: 300px;
+    padding: 20px 10px 10px 10px;
+    /* flex-wrap: wrap; */
+    
+}
+
+.featured h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+#locations-container {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px; 
+    max-width: 1200px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.header-container {
+    display: inline-flex;
+    bottom: 0px;
+}
+
+.header-container h1 {
+    margin-bottom: 15px;
+}
+
+.addresses-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.address {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin: 0 20px;
+    /* flex-shrink: 1; */
+}
+
+.bottom {
+    height: 200px;
+    justify-content: center;
+}
+
+footer {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* add @medias */
+
